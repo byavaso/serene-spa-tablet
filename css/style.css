@@ -1,0 +1,104 @@
+/* Global reset + layout. Token-only — literal renk/font/size yasak. */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  font-weight: var(--fw-regular);
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  overscroll-behavior: none;
+}
+
+html[lang="ar"] body { font-family: var(--font-arabic); }
+html[lang="ru"] body { font-family: var(--font-cyrillic); }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Layout */
+#topbar {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: var(--header-height);
+  z-index: var(--z-header);
+  display: flex;
+  align-items: center;
+  padding-inline: var(--space-lg);
+  background: linear-gradient(180deg, var(--color-bg) 0%, transparent 100%);
+}
+
+#topbar[hidden] { display: none; }
+
+.topbar-inner {
+  margin-inline-start: auto;
+  display: flex;
+  gap: var(--space-md);
+}
+
+.topbar-btn {
+  min-height: var(--tap-min);
+  min-width: var(--tap-min);
+  padding-inline: var(--space-md);
+  padding-block: var(--space-sm);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wide);
+  box-shadow: var(--shadow-soft);
+  transition: background var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+}
+
+.topbar-btn:active {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+  transform: scale(0.97);
+}
+
+#screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

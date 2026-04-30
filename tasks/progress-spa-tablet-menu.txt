@@ -1,0 +1,35 @@
+# Progress: Spa Tablet Menu
+
+## Status
+
+- [x] US-001: Repo iskelet + manifest
+- [x] US-002: JSON şema + tr.json placeholder
+- [x] US-003: EN gerçek + RU/AR/DE placeholder JSON
+- [x] US-004: CSS design tokens (token-only kural)
+- [x] US-005: Base shell + persistent header slot
+- [x] US-006: Hash router modülü
+- [x] US-007: i18n loader modülü
+- [x] US-008: Welcome/idle ekranı (multilingual rotator)
+- [x] US-009: Dil seçim ekranı
+- [x] US-010: Kategori listesi ekranı
+- [x] US-011: Hizmet listesi ekranı
+- [x] US-012: Hizmet detay ekranı
+- [x] US-013: Persistent header (Home + Lang Change)
+- [x] US-014: Arapça RTL doğrulama
+- [x] US-015: 60sn idle timer
+- [x] US-016: Sayfa geçiş animasyonları
+- [x] US-017: Service worker offline cache + günlük update check
+- [x] US-018: GitHub Actions Pages deploy (public repo)
+- [x] US-019: Owner edit guide README
+- [x] US-020: Tablet kiosk konfigürasyon notları
+
+## Learnings
+
+(implementasyon sırasında dolacak)
+
+## Blockers
+
+(yok)
+
+---
+Last updated: 2026-05-01

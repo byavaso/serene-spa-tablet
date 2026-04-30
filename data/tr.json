@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "language": "tr",
+    "direction": "ltr",
+    "languageName": "Türkçe",
+    "currency": "EUR",
+    "durationUnit": "dk",
+    "locale": "tr-TR"
+  },
+  "ui": {
+    "welcomeRotate": {
+      "tr": "Dokunarak başlayın",
+      "en": "Touch to start",
+      "ru": "Прикоснитесь, чтобы начать",
+      "ar": "اضغط للبدء",
+      "de": "Berühren zum Starten"
+    },
+    "selectLanguage": "Lütfen dilinizi seçin",
+    "back": "Geri",
+    "home": "Ana Sayfa",
+    "changeLanguage": "Dil Değiştir",
+    "duration": "Süre",
+    "price": "Fiyat",
+    "benefits": "Faydalar",
+    "categoriesTitle": "Hizmetlerimiz",
+    "servicesTitle": "Hizmetler"
+  },
+  "categories": [
+    {
+      "id": "massages",
+      "name": "Masajlar",
+      "description": "Geleneksel ve modern masaj deneyimleri",
+      "image": "images/categories/massages.webp",
+      "services": [
+        {
+          "id": "aromatherapy",
+          "name": "Aromaterapi Masajı",
+          "shortDescription": "Esansiyel yağlarla rahatlatıcı dokunuş",
+          "longDescription": "Aromaterapi masajı, dikkatle seçilmiş esansiyel yağların yumuşak masaj teknikleriyle birleştiği bir deneyimdir. Lavanta, ylang-ylang ve sandal ağacı gibi yağlar zihinsel ve fiziksel rahatlama sağlar. Stres seviyenizi düşürür, uyku kalitenizi artırır.",
+          "duration": 60,
+          "price": 90,
+          "image": "images/services/aromatherapy.webp",
+          "benefits": [
+            "Stres ve kaygıyı azaltır",
+            "Uyku kalitesini artırır",
+            "Kas gerginliğini giderir",
+            "Bağışıklık sistemini güçlendirir"
+          ]
+        },
+        {
+          "id": "deep-tissue",
+          "name": "Derin Doku Masajı",
+          "shortDescription": "Yoğun kas gerginliğine etkin çözüm",
+          "longDescription": "Derin doku masajı, kasların derin katmanlarına ulaşan kuvvetli baskı teknikleriyle uygulanır. Kronik gerginlik, spor yaralanmaları ve duruş bozukluklarından kaynaklanan ağrılar için idealdir.",
+          "duration": 75,
+          "price": 110,
+          "image": "images/services/deep-tissue.webp",
+          "benefits": [
+            "Kronik kas ağrılarını giderir",
+            "Kan dolaşımını artırır",
+            "Esnekliği iyileştirir",
+            "Postür düzeltir"
+          ]
+        },
+        {
+          "id": "hot-stone",
+          "name": "Sıcak Taş Masajı",
+          "shortDescription": "Volkanik taşların sakinleştirici sıcaklığı",
+          "longDescription": "Volkanik bazalt taşları belirli ısıya getirilerek vücudun stratejik noktalarına yerleştirilir. Sıcaklık kasları derinden gevşetir, terapistin masaj manevralarını daha etkili kılar.",
+          "duration": 90,
+          "price": 130,
+          "image": "images/services/hot-stone.webp",
+          "benefits": [
+            "Derin kas gevşemesi sağlar",
+            "Kan dolaşımını destekler",
+            "Zihinsel berraklık sunar",
+            "Enerji dengesini yeniler"
+          ]
+        },
+        {
+          "id": "swedish",
+          "name": "İsveç Masajı",
+          "shortDescription": "Klasik ve evrensel rahatlatma",
+          "longDescription": "İsveç masajı, uzun ve akıcı hareketlerle yapılan klasik bir tekniktir. İlk kez masaj alanlar için ideal başlangıçtır; tüm vücutta yumuşak bir gevşeme yaratır.",
+          "duration": 60,
+          "price": 85,
+          "image": "images/services/swedish.webp",
+          "benefits": [
+            "Genel rahatlama sağlar",
+            "Kan dolaşımını canlandırır",
+            "Toksin atımını destekler",
+            "Ruh halini iyileştirir"
+          ]
+        },
+        {
+          "id": "thai",
+          "name": "Tay Masajı",
+          "shortDescription": "Esneme ve baskı sanatı",
+          "longDescription": "Geleneksel Tay masajı, pasif yoga pozları, akupresur ve baskı tekniklerini birleştirir. Mat üzerinde, gevşek kıyafetlerle yapılır. Esnekliği artırır, enerji akışını dengeler.",
+          "duration": 90,
+          "price": 120,
+          "image": "images/services/thai.webp",
+          "benefits": [
+            "Esnekliği önemli ölçüde artırır",
+            "Enerji akışını dengeler",
+            "Eklem hareket açıklığını iyileştirir",
+            "Zihni sakinleştirir"
+          ]
+        },
+        {
+          "id": "couples",
+          "name": "Çift Masajı",
+          "shortDescription": "İki kişilik özel deneyim",
+          "longDescription": "Sevdiklerinizle paylaşacağınız özel bir an. Yan yana masaj yataklarında, iki terapistle eşzamanlı masaj. Romantik bir kaçamak veya özel bir kutlama için ideal.",
+          "duration": 60,
+          "price": 170,
+          "image": "images/services/couples.webp",
+          "benefits": [
+            "Birlikte rahatlama deneyimi",
+            "Romantik bir kaçış",
+            "Özel günler için ideal",
+            "Paylaşılan huzur anı"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "facials",
+      "name": "Yüz Bakımı",
+      "description": "Cildinize özel ritüeller",
+      "image": "images/categories/facials.webp",
+      "services": [
+        {
+          "id": "hydrating",
+          "name": "Nemlendirici Yüz Bakımı",
+          "shortDescription": "Cildi derinlemesine nemlendiren ritüel",
+          "longDescription": "Hyalüronik asit ve doğal nemlendirici özlerle zenginleştirilmiş bu bakım, cildi içten dolduran nem deposu yaratır. Kuru ve donuk ciltler için idealdir.",
+          "duration": 60,
+          "price": 95,
+          "image": "images/services/hydrating.webp",
+          "benefits": [
+            "Cildi derinden nemlendirir",
+            "Kuruluğu giderir",
+            "Cildi yumuşatır",
+            "Doğal parlaklık verir"
+          ]
+        },
+        {
+          "id": "anti-aging",
+          "name": "Yaşlanma Karşıtı Bakım",
+          "shortDescription": "İnce çizgilere ve sıkılığa odaklı",
+          "longDescription": "Peptid kompleksleri, retinol türevleri ve antioksidanlarla zenginleştirilmiş bu bakım, ince çizgilerin görünümünü azaltır ve cilt sıkılığını artırır.",
+          "duration": 75,
+          "price": 130,
+          "image": "images/services/anti-aging.webp",
+          "benefits": [
+            "İnce çizgileri azaltır",
+            "Cildi sıkılaştırır",
+            "Kolajen üretimini destekler",
+            "Genç bir görünüm sağlar"
+          ]
+        },
+        {
+          "id": "purifying",
+          "name": "Arındırıcı Bakım",
+          "shortDescription": "Yağlı ve karma ciltlere",
+          "longDescription": "Aktif kömür ve kil bazlı bu bakım, gözeneklerdeki kirlilikleri çekerek cildi derinlemesine arındırır. Yağ dengesini düzenler, akneye yatkın ciltlere uygundur.",
+          "duration": 60,
+          "price": 90,
+          "image": "images/services/purifying.webp",
+          "benefits": [
+            "Gözenekleri arındırır",
+            "Yağ dengesini düzenler",
+            "Cildi mat hale getirir",
+            "Akne oluşumunu azaltır"
+          ]
+        },
+        {
+          "id": "brightening",
+          "name": "Aydınlatıcı Bakım",
+          "shortDescription": "Cilt tonu eşitleyici ve aydınlatıcı",
+          "longDescription": "C vitamini ve niasinamid içeren bu bakım, cilt tonundaki düzensizlikleri giderir, lekeleri açar, cildi parlatır. Mat ve yorgun ciltler için yenileyicidir.",
+          "duration": 60,
+          "price": 100,
+          "image": "images/services/brightening.webp",
+          "benefits": [
+            "Cilt tonunu eşitler",
+            "Lekeleri açar",
+            "Doğal parlaklık verir",
+            "Cildi canlandırır"
+          ]
+        },
+        {
+          "id": "express",
+          "name": "Express Cilt Bakımı",
+          "shortDescription": "30 dakikalık hızlı tazelenme",
+          "longDescription": "Yoğun bir günün ortasında veya özel bir etkinlik öncesi hızlı bir tazelenme. Temizlik, peeling ve yoğun maske içeren kompakt bir ritüel.",
+          "duration": 30,
+          "price": 55,
+          "image": "images/services/express.webp",
+          "benefits": [
+            "Hızlı sonuç verir",
+            "Cildi anında tazeler",
+            "Etkinlik öncesi idealdir",
+            "Düşük süreli yoğun bakım"
+          ]
+        },
+        {
+          "id": "luxury",
+          "name": "Lüks Yüz Ritüeli",
+          "shortDescription": "Altın infüzyonlu özel bakım",
+          "longDescription": "24 ayar altın yapraklarla sonlandırılan bu özel ritüel, gerçek bir lüks deneyimidir. Kolajen maskesi, derin masaj ve altın infüzyonu cildi yenileyici bir ışıltıyla bırakır.",
+          "duration": 90,
+          "price": 180,
+          "image": "images/services/luxury-facial.webp",
+          "benefits": [
+            "Lüks bir deneyim sunar",
+            "Cildi yoğun besler",
+            "Işıltılı bir görünüm verir",
+            "Özel günler için idealdir"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-treatments",
+      "name": "Vücut Bakımları",
+      "description": "Tüm vücudunuza özel ritüeller",
+      "image": "images/categories/body.webp",
+      "services": [
+        {
+          "id": "body-scrub",
+          "name": "Vücut Peelingi",
+          "shortDescription": "Cildi yenileyen pürüzsüzleştirici",
+          "longDescription": "Doğal şeker ve esansiyel yağ karışımıyla yapılan bu peeling, ölü deri hücrelerini nazikçe arındırır. Cildi pürüzsüz, yumuşak ve ipeksi bir dokuda bırakır.",
+          "duration": 45,
+          "price": 75,
+          "image": "images/services/body-scrub.webp",
+          "benefits": [
+            "Ölü hücreleri arındırır",
+            "Cildi pürüzsüzleştirir",
+            "Kan dolaşımını canlandırır",
+            "Sonraki bakımların etkisini artırır"
+          ]
+        },
+        {
+          "id": "body-wrap",
+          "name": "Vücut Sargı Terapisi",
+          "shortDescription": "Detoks ve sıkılaştırma",
+          "longDescription": "Yosun ve kil bazlı sargı, cildin toksinlerden arınmasına ve sıkılaşmasına yardımcı olur. Vücut hatlarını şekillendirir, selülit görünümünü azaltır.",
+          "duration": 75,
+          "price": 120,
+          "image": "images/services/body-wrap.webp",
+          "benefits": [
+            "Detoks etkisi sağlar",
+            "Cildi sıkılaştırır",
+            "Selülit görünümünü azaltır",
+            "Cildi mineralle besler"
+          ]
+        },
+        {
+          "id": "anti-cellulite",
+          "name": "Selülit Karşıtı Bakım",
+          "shortDescription": "Hedefli vücut şekillendirici",
+          "longDescription": "Drenaj masajı ve aktif bileşenli kremler ile yapılan bu bakım, selülit görünümünü azaltır, lenf akışını canlandırır ve vücut konturunu iyileştirir.",
+          "duration": 60,
+          "price": 100,
+          "image": "images/services/anti-cellulite.webp",
+          "benefits": [
+            "Selülit görünümünü azaltır",
+            "Lenf drenajı sağlar",
+            "Vücut hatlarını iyileştirir",
+            "Cildi sıkılaştırır"
+          ]
+        },
+        {
+          "id": "back-treatment",
+          "name": "Sırt Bakımı",
+          "shortDescription": "Sırta özel temizlik ve bakım",
+          "longDescription": "Sırt bölgesine özel olarak hazırlanmış bu bakım, derin temizlik, peeling ve nemlendiriciyi bir araya getirir. Akneye yatkın veya kuru sırt cildine uygundur.",
+          "duration": 45,
+          "price": 80,
+          "image": "images/services/back-treatment.webp",
+          "benefits": [
+            "Sırt cildini arındırır",
+            "Akne oluşumunu azaltır",
+            "Cildi nemlendirir",
+            "Görünümü iyileştirir"
+          ]
+        },
+        {
+          "id": "hand-foot",
+          "name": "El ve Ayak Bakımı",
+          "shortDescription": "İhmal edilen yerlere özel ilgi",
+          "longDescription": "Ellerinizi ve ayaklarınızı yenileyici bir bakımla şımartın. Peeling, nemlendirici maske ve masaj ile cildi pürüzsüz, tırnakları sağlıklı bir hale getirir.",
+          "duration": 45,
+          "price": 70,
+          "image": "images/services/hand-foot.webp",
+          "benefits": [
+            "Cildi yumuşatır",
+            "Tırnakları güçlendirir",
+            "Yorgun bölgeleri canlandırır",
+            "Bütünsel rahatlama sunar"
+          ]
+        },
+        {
+          "id": "signature-ritual",
+          "name": "İmza Vücut Ritüeli",
+          "shortDescription": "Tüm vücut için kapsamlı deneyim",
+          "longDescription": "Peeling, sargı, masaj ve nemlendiriciyi birleştiren imza ritüelimiz, tam bir teslim olma deneyimi sunar. 2 saatlik bu özel zamanı sadece kendinize ayırın.",
+          "duration": 120,
+          "price": 200,
+          "image": "images/services/signature-body.webp",
+          "benefits": [
+            "Tam bir vücut yenilenmesi",
+            "Derinlemesine teslim olma",
+            "Ciltte uzun süreli sonuç",
+            "Eşsiz lüks deneyim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hammam",
+      "name": "Hamam",
+      "description": "Geleneksel Türk hamam ritüelleri",
+      "image": "images/categories/hammam.webp",
+      "services": [
+        {
+          "id": "classic-hammam",
+          "name": "Klasik Hamam",
+          "shortDescription": "Geleneksel köpük ve kese deneyimi",
+          "longDescription": "Asırlık Türk hamam geleneğinin en otantik halini deneyimleyin. Sıcak mermerde dinlenme, kese ile derin temizlik, ardından bol köpükle yıkanma.",
+          "duration": 60,
+          "price": 80,
+          "image": "images/services/classic-hammam.webp",
+          "benefits": [
+            "Cildi derinden arındırır",
+            "Kan dolaşımını artırır",
+            "Geleneksel bir deneyim sunar",
+            "Kasları gevşetir"
+          ]
+        },
+        {
+          "id": "royal-hammam",
+          "name": "Sultan Hamamı",
+          "shortDescription": "Geleneksel ritüel + masaj + yüz bakımı",
+          "longDescription": "Hamam deneyimine masaj ve yüz bakımının eklendiği kapsamlı ritüel. Sultanların hamam deneyimini yeniden yaşayın. Klasik kese, masaj ve hidratasyonun bütünleşmesi.",
+          "duration": 120,
+          "price": 160,
+          "image": "images/services/royal-hammam.webp",
+          "benefits": [
+            "Tam bir teslim olma deneyimi",
+            "Çoklu fayda bir arada",
+            "Lüks ve geleneksel bir deneyim",
+            "Tüm vücut yenilenmesi"
+          ]
+        },
+        {
+          "id": "couples-hammam",
+          "name": "Çift Hamamı",
+          "shortDescription": "Özel hamam, iki kişiye özel",
+          "longDescription": "Özel ayrılmış hamam alanında iki kişilik geleneksel deneyim. Romantik kaçamaklar veya özel kutlamalar için unutulmaz bir an.",
+          "duration": 75,
+          "price": 180,
+          "image": "images/services/couples-hammam.webp",
+          "benefits": [
+            "Özel iki kişilik alan",
+            "Romantik atmosfer",
+            "Birlikte rahatlama",
+            "Özel anılar oluşturur"
+          ]
+        },
+        {
+          "id": "moroccan-bath",
+          "name": "Fas Hamamı",
+          "shortDescription": "Siyah sabun ve gül suyu ritüeli",
+          "longDescription": "Fas geleneklerinden esinlenen bu ritüel, siyah sabun, kese ve gül suyu ile cildi derinlemesine arındırır ve canlandırır. Egzotik bir deneyim.",
+          "duration": 75,
+          "price": 110,
+          "image": "images/services/moroccan-bath.webp",
+          "benefits": [
+            "Cildi derinden arındırır",
+            "Egzotik bir deneyim sunar",
+            "Doğal ürünlerle besleyici",
+            "Cildi yumuşatır"
+          ]
+        },
+        {
+          "id": "scrub-only",
+          "name": "Kese ve Köpük",
+          "shortDescription": "Kompakt geleneksel temizlik",
+          "longDescription": "Hızlı bir geleneksel temizlik. 30 dakikada kese ve köpük ritüeli ile cildi yenileyin. Daha uzun ritüellere zamanı olmayanlar için idealdir.",
+          "duration": 30,
+          "price": 50,
+          "image": "images/services/scrub-foam.webp",
+          "benefits": [
+            "Hızlı yenilenme",
+            "Cilt yumuşaklığı",
+            "Pratik geleneksel deneyim",
+            "Düşük süreli rahatlama"
+          ]
+        },
+        {
+          "id": "hammam-massage-combo",
+          "name": "Hamam ve Masaj Kombinasyonu",
+          "shortDescription": "Hamam ardından dinlendirici masaj",
+          "longDescription": "Klasik hamam deneyiminin ardından 45 dakikalık aromaterapi masajıyla devam edin. Cildiniz arındıktan sonra masajın faydalarını derinden alacaksınız.",
+          "duration": 105,
+          "price": 150,
+          "image": "images/services/hammam-massage.webp",
+          "benefits": [
+            "Tam yenilenme deneyimi",
+            "Hamam + masaj sinerjisi",
+            "Derin gevşeme",
+            "Cilt ve kas faydası"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness Paketleri",
+      "description": "Çoklu hizmetle tam deneyim",
+      "image": "images/categories/wellness.webp",
+      "services": [
+        {
+          "id": "half-day",
+          "name": "Yarım Gün Wellness",
+          "shortDescription": "3 saatlik kapsamlı program",
+          "longDescription": "Hamam, masaj ve yüz bakımının bir araya geldiği 3 saatlik özel program. Yarım gününüzü tamamen kendinize ayırın.",
+          "duration": 180,
+          "price": 250,
+          "image": "images/services/half-day.webp",
+          "benefits": [
+            "Üç hizmet bir arada",
+            "Tam bir kaçış deneyimi",
+            "Avantajlı paket fiyatı",
+            "Kapsamlı yenilenme"
+          ]
+        },
+        {
+          "id": "full-day",
+          "name": "Tam Gün Wellness",
+          "shortDescription": "5 saatlik VIP deneyim",
+          "longDescription": "5 saat süren bu özel paket: hamam, masaj, yüz bakımı, vücut bakımı, hafif öğle yemeği ve çay servisi. Lüks bir kaçış deneyimi.",
+          "duration": 300,
+          "price": 400,
+          "image": "images/services/full-day.webp",
+          "benefits": [
+            "Tam günlük lüks kaçış",
+            "Tüm hizmetler dahil",
+            "Yemek servisi içerir",
+            "Maksimum yenilenme"
+          ]
+        },
+        {
+          "id": "couples-package",
+          "name": "Çift Paketi",
+          "shortDescription": "Sevdiklerinizle paylaşın",
+          "longDescription": "İki kişilik özel paket: çift masajı, çift hamamı ve özel öğle yemeği. Romantik bir hediye veya özel kutlama için mükemmel.",
+          "duration": 180,
+          "price": 380,
+          "image": "images/services/couples-package.webp",
+          "benefits": [
+            "İki kişilik özel deneyim",
+            "Romantik bir kaçış",
+            "Yemek servisi dahil",
+            "Özel anılar"
+          ]
+        },
+        {
+          "id": "bridal",
+          "name": "Gelin Paketi",
+          "shortDescription": "Düğün öncesi özel hazırlık",
+          "longDescription": "Düğününüzden önceki özel günde gelin için hazırlanan paket: lüks yüz bakımı, vücut peelingi, masaj ve manikür-pedikür. Mükemmel bir gelin hazırlığı.",
+          "duration": 240,
+          "price": 350,
+          "image": "images/services/bridal.webp",
+          "benefits": [
+            "Düğün için ideal hazırlık",
+            "Tüm bakımlar bir arada",
+            "Manikür ve pedikür dahil",
+            "Özel günde ışıldatır"
+          ]
+        },
+        {
+          "id": "detox",
+          "name": "Detoks Paketi",
+          "shortDescription": "Vücut arındırma programı",
+          "longDescription": "Detoks odaklı bu paket: vücut sargı, lenf drenajı masajı ve aydınlatıcı yüz bakımı içerir. Vücudunuzu içten dışa arındırın.",
+          "duration": 180,
+          "price": 230,
+          "image": "images/services/detox.webp",
+          "benefits": [
+            "Toksinleri uzaklaştırır",
+            "Vücudu yeniler",
+            "Cildi aydınlatır",
+            "Enerji seviyesini artırır"
+          ]
+        },
+        {
+          "id": "stress-relief",
+          "name": "Stres Atma Paketi",
+          "shortDescription": "Yoğun günlere özel ferahlama",
+          "longDescription": "Stres atmaya odaklı bu paket: aromaterapi masajı, kafa ve omuz masajı, sıcak taş tedavisi içerir. Zihinsel ve fiziksel rahatlama bir arada.",
+          "duration": 150,
+          "price": 200,
+          "image": "images/services/stress-relief.webp",
+          "benefits": [
+            "Yoğun stres rahatlatma",
+            "Zihinsel berraklık",
+            "Derin kas gevşemesi",
+            "Uyku kalitesini artırır"
+          ]
+        }
+      ]
+    }
+  ]
+}

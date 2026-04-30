@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "language": "en",
+    "direction": "ltr",
+    "languageName": "English",
+    "currency": "EUR",
+    "durationUnit": "min",
+    "locale": "en-GB"
+  },
+  "ui": {
+    "welcomeRotate": {
+      "tr": "Dokunarak başlayın",
+      "en": "Touch to start",
+      "ru": "Прикоснитесь, чтобы начать",
+      "ar": "اضغط للبدء",
+      "de": "Berühren zum Starten"
+    },
+    "selectLanguage": "Please select your language",
+    "back": "Back",
+    "home": "Home",
+    "changeLanguage": "Change Language",
+    "duration": "Duration",
+    "price": "Price",
+    "benefits": "Benefits",
+    "categoriesTitle": "Our Services",
+    "servicesTitle": "Treatments"
+  },
+  "categories": [
+    {
+      "id": "massages",
+      "name": "Massages",
+      "description": "Traditional and modern massage experiences",
+      "image": "images/categories/massages.webp",
+      "services": [
+        {
+          "id": "aromatherapy",
+          "name": "Aromatherapy Massage",
+          "shortDescription": "Soothing touch with essential oils",
+          "longDescription": "Aromatherapy massage combines carefully selected essential oils with gentle massage techniques. Lavender, ylang-ylang and sandalwood support mental and physical relaxation. Reduces stress and improves sleep quality.",
+          "duration": 60,
+          "price": 90,
+          "image": "images/services/aromatherapy.webp",
+          "benefits": [
+            "Reduces stress and anxiety",
+            "Improves sleep quality",
+            "Relieves muscle tension",
+            "Supports the immune system"
+          ]
+        },
+        {
+          "id": "deep-tissue",
+          "name": "Deep Tissue Massage",
+          "shortDescription": "Effective relief for chronic tension",
+          "longDescription": "Deep tissue massage uses firm pressure to reach the deeper layers of muscle. Ideal for chronic tension, sports injuries and posture-related discomfort.",
+          "duration": 75,
+          "price": 110,
+          "image": "images/services/deep-tissue.webp",
+          "benefits": [
+            "Relieves chronic muscle pain",
+            "Improves circulation",
+            "Enhances flexibility",
+            "Corrects posture"
+          ]
+        },
+        {
+          "id": "hot-stone",
+          "name": "Hot Stone Massage",
+          "shortDescription": "Calming warmth of volcanic stones",
+          "longDescription": "Heated volcanic basalt stones are placed on strategic points of the body. The warmth deeply relaxes muscles and amplifies the effect of the therapist's manual techniques.",
+          "duration": 90,
+          "price": 130,
+          "image": "images/services/hot-stone.webp",
+          "benefits": [
+            "Provides deep muscle relaxation",
+            "Supports circulation",
+            "Offers mental clarity",
+            "Restores energy balance"
+          ]
+        },
+        {
+          "id": "swedish",
+          "name": "Swedish Massage",
+          "shortDescription": "Classic, universal relaxation",
+          "longDescription": "A classic technique using long, flowing strokes. Ideal for first-time guests; creates a gentle full-body release.",
+          "duration": 60,
+          "price": 85,
+          "image": "images/services/swedish.webp",
+          "benefits": [
+            "Promotes overall relaxation",
+            "Stimulates circulation",
+            "Supports detoxification",
+            "Lifts the mood"
+          ]
+        },
+        {
+          "id": "thai",
+          "name": "Thai Massage",
+          "shortDescription": "The art of stretching and pressure",
+          "longDescription": "Traditional Thai massage blends passive yoga poses, acupressure and pressure-point techniques. Performed on a mat in loose clothing. Increases flexibility and balances energy flow.",
+          "duration": 90,
+          "price": 120,
+          "image": "images/services/thai.webp",
+          "benefits": [
+            "Significantly improves flexibility",
+            "Balances energy flow",
+            "Enhances joint mobility",
+            "Calms the mind"
+          ]
+        },
+        {
+          "id": "couples",
+          "name": "Couples Massage",
+          "shortDescription": "An intimate experience for two",
+          "longDescription": "A special moment to share with your loved one. Side-by-side massage tables, two therapists working in sync. Ideal for romantic getaways or special celebrations.",
+          "duration": 60,
+          "price": 170,
+          "image": "images/services/couples.webp",
+          "benefits": [
+            "Shared relaxation experience",
+            "A romantic escape",
+            "Perfect for special occasions",
+            "A moment of shared serenity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "facials",
+      "name": "Facials",
+      "description": "Rituals tailored to your skin",
+      "image": "images/categories/facials.webp",
+      "services": [
+        {
+          "id": "hydrating",
+          "name": "Hydrating Facial",
+          "shortDescription": "A deeply hydrating ritual",
+          "longDescription": "Enriched with hyaluronic acid and natural humectants, this facial fills the skin with moisture from within. Ideal for dry and dull complexions.",
+          "duration": 60,
+          "price": 95,
+          "image": "images/services/hydrating.webp",
+          "benefits": [
+            "Hydrates the skin deeply",
+            "Relieves dryness",
+            "Softens the skin",
+            "Restores natural radiance"
+          ]
+        },
+        {
+          "id": "anti-aging",
+          "name": "Anti-Aging Facial",
+          "shortDescription": "Targeting fine lines and firmness",
+          "longDescription": "Formulated with peptide complexes, retinol derivatives and antioxidants, this facial reduces the appearance of fine lines and improves skin firmness.",
+          "duration": 75,
+          "price": 130,
+          "image": "images/services/anti-aging.webp",
+          "benefits": [
+            "Reduces fine lines",
+            "Firms the skin",
+            "Supports collagen production",
+            "Restores a youthful look"
+          ]
+        },
+        {
+          "id": "purifying",
+          "name": "Purifying Facial",
+          "shortDescription": "For oily and combination skin",
+          "longDescription": "Charcoal- and clay-based, this facial draws impurities out of the pores for a deep cleanse. Balances oil and suits acne-prone skin.",
+          "duration": 60,
+          "price": 90,
+          "image": "images/services/purifying.webp",
+          "benefits": [
+            "Purifies the pores",
+            "Balances oil production",
+            "Mattifies the skin",
+            "Reduces breakouts"
+          ]
+        },
+        {
+          "id": "brightening",
+          "name": "Brightening Facial",
+          "shortDescription": "Evens skin tone and brightens",
+          "longDescription": "Featuring vitamin C and niacinamide, this facial corrects uneven tone, lightens spots and revives dull, tired complexions.",
+          "duration": 60,
+          "price": 100,
+          "image": "images/services/brightening.webp",
+          "benefits": [
+            "Evens skin tone",
+            "Lightens dark spots",
+            "Restores radiance",
+            "Revitalises the complexion"
+          ]
+        },
+        {
+          "id": "express",
+          "name": "Express Facial",
+          "shortDescription": "A 30-minute pick-me-up",
+          "longDescription": "A quick refresh in the middle of a busy day or before a special event. A compact ritual covering cleansing, exfoliation and an intensive mask.",
+          "duration": 30,
+          "price": 55,
+          "image": "images/services/express.webp",
+          "benefits": [
+            "Delivers fast results",
+            "Refreshes the skin instantly",
+            "Ideal before events",
+            "Concentrated short ritual"
+          ]
+        },
+        {
+          "id": "luxury",
+          "name": "Luxury Gold Ritual",
+          "shortDescription": "A signature gold-infused facial",
+          "longDescription": "Finished with 24-karat gold leaf, this signature ritual is a true luxury experience. Collagen mask, deep facial massage and gold infusion leave the skin with a renewed glow.",
+          "duration": 90,
+          "price": 180,
+          "image": "images/services/luxury-facial.webp",
+          "benefits": [
+            "Offers a luxury experience",
+            "Nourishes the skin intensively",
+            "Restores a luminous glow",
+            "Perfect for special occasions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-treatments",
+      "name": "Body Treatments",
+      "description": "Whole-body wellness rituals",
+      "image": "images/categories/body.webp",
+      "services": [
+        {
+          "id": "body-scrub",
+          "name": "Body Scrub",
+          "shortDescription": "Renewing, smoothing exfoliation",
+          "longDescription": "A blend of natural sugar and essential oils gently sloughs away dead skin cells. Leaves the skin smooth, soft and silky.",
+          "duration": 45,
+          "price": 75,
+          "image": "images/services/body-scrub.webp",
+          "benefits": [
+            "Removes dead skin cells",
+            "Smooths the skin",
+            "Stimulates circulation",
+            "Boosts subsequent treatments"
+          ]
+        },
+        {
+          "id": "body-wrap",
+          "name": "Body Wrap Therapy",
+          "shortDescription": "Detox and firming",
+          "longDescription": "An algae- and clay-based wrap that helps the skin release toxins and firm up. Reshapes the body's contours and reduces the appearance of cellulite.",
+          "duration": 75,
+          "price": 120,
+          "image": "images/services/body-wrap.webp",
+          "benefits": [
+            "Provides a detox effect",
+            "Firms the skin",
+            "Reduces the look of cellulite",
+            "Replenishes minerals"
+          ]
+        },
+        {
+          "id": "anti-cellulite",
+          "name": "Anti-Cellulite Treatment",
+          "shortDescription": "Targeted body sculpting",
+          "longDescription": "Combining lymphatic drainage massage with active-ingredient creams, this treatment reduces the look of cellulite, stimulates lymph flow and improves body contour.",
+          "duration": 60,
+          "price": 100,
+          "image": "images/services/anti-cellulite.webp",
+          "benefits": [
+            "Reduces cellulite appearance",
+            "Provides lymphatic drainage",
+            "Improves body contour",
+            "Firms the skin"
+          ]
+        },
+        {
+          "id": "back-treatment",
+          "name": "Back Treatment",
+          "shortDescription": "Cleansing and care for the back",
+          "longDescription": "A back-specific ritual combining deep cleansing, exfoliation and hydration. Suits acne-prone or dry back skin.",
+          "duration": 45,
+          "price": 80,
+          "image": "images/services/back-treatment.webp",
+          "benefits": [
+            "Purifies back skin",
+            "Reduces breakouts",
+            "Hydrates the skin",
+            "Improves overall appearance"
+          ]
+        },
+        {
+          "id": "hand-foot",
+          "name": "Hand & Foot Care",
+          "shortDescription": "Special care for overlooked areas",
+          "longDescription": "Treat your hands and feet to a renewing ritual. Exfoliation, hydrating mask and massage leave the skin smooth and the nails healthy.",
+          "duration": 45,
+          "price": 70,
+          "image": "images/services/hand-foot.webp",
+          "benefits": [
+            "Softens the skin",
+            "Strengthens the nails",
+            "Revitalises tired areas",
+            "Offers holistic relaxation"
+          ]
+        },
+        {
+          "id": "signature-ritual",
+          "name": "Signature Body Ritual",
+          "shortDescription": "A comprehensive whole-body experience",
+          "longDescription": "Our signature ritual combines exfoliation, wrap, massage and hydration for a full surrender. Reserve two hours just for yourself.",
+          "duration": 120,
+          "price": 200,
+          "image": "images/services/signature-body.webp",
+          "benefits": [
+            "Complete body renewal",
+            "Total surrender",
+            "Long-lasting skin results",
+            "An incomparable luxury"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hammam",
+      "name": "Hammam",
+      "description": "Traditional Turkish bath rituals",
+      "image": "images/categories/hammam.webp",
+      "services": [
+        {
+          "id": "classic-hammam",
+          "name": "Classic Hammam",
+          "shortDescription": "Traditional foam and exfoliation",
+          "longDescription": "Experience the most authentic form of the centuries-old Turkish hammam tradition. Rest on warm marble, deep cleanse with the kese mitt, then a generous foam wash.",
+          "duration": 60,
+          "price": 80,
+          "image": "images/services/classic-hammam.webp",
+          "benefits": [
+            "Cleanses the skin deeply",
+            "Boosts circulation",
+            "An authentic tradition",
+            "Relaxes the muscles"
+          ]
+        },
+        {
+          "id": "royal-hammam",
+          "name": "Sultan's Hammam",
+          "shortDescription": "Hammam ritual + massage + facial",
+          "longDescription": "A comprehensive ritual that adds massage and a facial to the hammam experience. Step into a sultan's bathing tradition. Classic exfoliation, massage and hydration combined.",
+          "duration": 120,
+          "price": 160,
+          "image": "images/services/royal-hammam.webp",
+          "benefits": [
+            "A total surrender experience",
+            "Multiple benefits in one",
+            "Luxurious and traditional",
+            "Whole-body renewal"
+          ]
+        },
+        {
+          "id": "couples-hammam",
+          "name": "Couples Hammam",
+          "shortDescription": "Private hammam for two",
+          "longDescription": "A traditional experience for two in a private hammam space. An unforgettable moment for romantic escapes or special celebrations.",
+          "duration": 75,
+          "price": 180,
+          "image": "images/services/couples-hammam.webp",
+          "benefits": [
+            "Private space for two",
+            "Romantic atmosphere",
+            "Shared relaxation",
+            "Creates lasting memories"
+          ]
+        },
+        {
+          "id": "moroccan-bath",
+          "name": "Moroccan Bath",
+          "shortDescription": "Black soap and rose water ritual",
+          "longDescription": "Inspired by Moroccan tradition, this ritual uses black soap, exfoliation and rose water to deeply cleanse and revive the skin. An exotic experience.",
+          "duration": 75,
+          "price": 110,
+          "image": "images/services/moroccan-bath.webp",
+          "benefits": [
+            "Deep skin cleansing",
+            "An exotic experience",
+            "Nourishing natural ingredients",
+            "Softens the skin"
+          ]
+        },
+        {
+          "id": "scrub-only",
+          "name": "Exfoliation & Foam",
+          "shortDescription": "Compact traditional cleanse",
+          "longDescription": "A quick traditional cleanse. Refresh your skin in 30 minutes with kese exfoliation and foam. Ideal when time for longer rituals is short.",
+          "duration": 30,
+          "price": 50,
+          "image": "images/services/scrub-foam.webp",
+          "benefits": [
+            "Fast renewal",
+            "Skin softness",
+            "Practical traditional ritual",
+            "Short, effective relaxation"
+          ]
+        },
+        {
+          "id": "hammam-massage-combo",
+          "name": "Hammam & Massage Combo",
+          "shortDescription": "Hammam followed by a relaxing massage",
+          "longDescription": "Continue the classic hammam experience with a 45-minute aromatherapy massage. Once your skin is purified, the massage's benefits go even deeper.",
+          "duration": 105,
+          "price": 150,
+          "image": "images/services/hammam-massage.webp",
+          "benefits": [
+            "Total renewal",
+            "Hammam + massage synergy",
+            "Deep relaxation",
+            "Skin and muscle benefits"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness Packages",
+      "description": "Multi-treatment full experience",
+      "image": "images/categories/wellness.webp",
+      "services": [
+        {
+          "id": "half-day",
+          "name": "Half-Day Wellness",
+          "shortDescription": "A 3-hour comprehensive programme",
+          "longDescription": "A 3-hour curated programme combining hammam, massage and facial. Dedicate half a day entirely to yourself.",
+          "duration": 180,
+          "price": 250,
+          "image": "images/services/half-day.webp",
+          "benefits": [
+            "Three treatments in one",
+            "A complete escape",
+            "Package savings",
+            "Comprehensive renewal"
+          ]
+        },
+        {
+          "id": "full-day",
+          "name": "Full-Day Wellness",
+          "shortDescription": "A 5-hour VIP experience",
+          "longDescription": "This 5-hour package includes hammam, massage, facial, body treatment, a light lunch and tea service. A truly luxurious escape.",
+          "duration": 300,
+          "price": 400,
+          "image": "images/services/full-day.webp",
+          "benefits": [
+            "Full-day luxury escape",
+            "All treatments included",
+            "Lunch service included",
+            "Maximum renewal"
+          ]
+        },
+        {
+          "id": "couples-package",
+          "name": "Couples Package",
+          "shortDescription": "To share with your loved one",
+          "longDescription": "A package for two: couples massage, couples hammam and a private lunch. Perfect as a romantic gift or for a special celebration.",
+          "duration": 180,
+          "price": 380,
+          "image": "images/services/couples-package.webp",
+          "benefits": [
+            "Private experience for two",
+            "A romantic escape",
+            "Lunch service included",
+            "Lasting memories"
+          ]
+        },
+        {
+          "id": "bridal",
+          "name": "Bridal Package",
+          "shortDescription": "Pre-wedding preparation",
+          "longDescription": "A package designed for the bride before her wedding day: luxury facial, body scrub, massage and manicure-pedicure. The perfect bridal preparation.",
+          "duration": 240,
+          "price": 350,
+          "image": "images/services/bridal.webp",
+          "benefits": [
+            "Ideal wedding preparation",
+            "All treatments together",
+            "Manicure and pedicure included",
+            "Radiant on the big day"
+          ]
+        },
+        {
+          "id": "detox",
+          "name": "Detox Package",
+          "shortDescription": "Body purification programme",
+          "longDescription": "A detox-focused package: body wrap, lymphatic drainage massage and brightening facial. Cleanse your body inside out.",
+          "duration": 180,
+          "price": 230,
+          "image": "images/services/detox.webp",
+          "benefits": [
+            "Removes toxins",
+            "Renews the body",
+            "Brightens the skin",
+            "Boosts energy levels"
+          ]
+        },
+        {
+          "id": "stress-relief",
+          "name": "Stress Relief Package",
+          "shortDescription": "Refreshment for intense days",
+          "longDescription": "A stress-relief package: aromatherapy massage, head and shoulder massage and hot stone therapy. Mental and physical relaxation in one.",
+          "duration": 150,
+          "price": 200,
+          "image": "images/services/stress-relief.webp",
+          "benefits": [
+            "Intense stress release",
+            "Mental clarity",
+            "Deep muscle relaxation",
+            "Improves sleep quality"
+          ]
+        }
+      ]
+    }
+  ]
+}

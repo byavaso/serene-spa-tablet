@@ -1,0 +1,27 @@
+{
+  "name": "Serene Spa Wellness",
+  "short_name": "Serene Spa",
+  "description": "Spa hizmet menüsü — Serene Spa Wellness",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "lang": "tr",
+  "dir": "auto",
+  "background_color": "#f7f4ee",
+  "theme_color": "#87a684",
+  "icons": [
+    {
+      "src": "images/ui/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/ui/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
