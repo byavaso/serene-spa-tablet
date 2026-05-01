@@ -143,7 +143,7 @@ Serene Spa Wellness lobilerinde misafirlere dil seçtirip o dilde spa hizmet men
 
 **Acceptance Criteria:**
 - [ ] 5 dil kartı grid layout: Türkçe / English / Русский / العربية / Deutsch
-- [ ] Arapça etiketi `العربية` (ع ile başlar) — güvenilir kaynaktan, render visual doğrulanmış
+- [ ] Arapça etiketi `العربية` (ا alif ile başlar — al- definite article + عربية) — güvenilir kaynaktan, render visual doğrulanmış
 - [ ] Her kart tap target ≥60px, yumuşak köşe (radius token)
 - [ ] Tap → `loadLanguage(code)` + `navigate('categories')`
 - [ ] AR seçince `<html dir="rtl">` aktif olur

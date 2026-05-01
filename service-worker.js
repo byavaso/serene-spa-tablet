@@ -1,7 +1,7 @@
 // Service worker — offline cache + günlük update check.
 // SW_VERSION her deploy'da bump edilir; eski cache activate'de silinir.
 
-const SW_VERSION = "v1.0.0";
+const SW_VERSION = "v1.0.1";
 const CACHE_SHELL = `spa-menu-shell-${SW_VERSION}`;
 const CACHE_DATA = `spa-menu-data-${SW_VERSION}`;
 const CACHE_IMG = `spa-menu-img-${SW_VERSION}`;
@@ -25,12 +25,30 @@ const SHELL_ASSETS = [
   "./js/screens/detail.js",
 ];
 
+const DATA_ASSETS = [
+  "./data/tr.json",
+  "./data/en.json",
+  "./data/ru.json",
+  "./data/ar.json",
+  "./data/de.json",
+];
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches
-      .open(CACHE_SHELL)
-      .then((cache) => cache.addAll(SHELL_ASSETS))
-      .then(() => self.skipWaiting())
+    (async () => {
+      const shell = await caches.open(CACHE_SHELL);
+      await shell.addAll(SHELL_ASSETS);
+      const data = await caches.open(CACHE_DATA);
+      // JSON precache best-effort — bir tanesi düşse bile install başarısız olmasın
+      await Promise.allSettled(
+        DATA_ASSETS.map((url) =>
+          fetch(url, { cache: "no-cache" }).then((res) => {
+            if (res && res.ok) return data.put(url, res);
+          })
+        )
+      );
+      await self.skipWaiting();
+    })()
   );
 });
 
