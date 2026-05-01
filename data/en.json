@@ -23,7 +23,10 @@
     "price": "Price",
     "benefits": "Benefits",
     "categoriesTitle": "Our Services",
-    "servicesTitle": "Treatments"
+    "servicesTitle": "Treatments",
+    "title": "Serene Spa Wellness",
+    "loading": "Loading...",
+    "errorLoad": "Failed to load menu. Please try again."
   },
   "categories": [
     {

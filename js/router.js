@@ -37,10 +37,8 @@ async function render(name, params) {
   } else if (typeof html === "string") {
     root.innerHTML = html;
   }
-  // bir frame sonra entering kaldır
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => root.classList.remove("screen-entering"));
-  });
+  // bir frame sonra entering kaldır (next-frame trigger to allow CSS transition)
+  requestAnimationFrame(() => root.classList.remove("screen-entering"));
   current = { name, params };
   document.dispatchEvent(new CustomEvent("route:change", { detail: current }));
 }

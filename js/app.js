@@ -1,7 +1,7 @@
 // Ana giriş noktası — router + ekran kayıtları + boot.
 
 import { register, start, navigate } from "./router.js";
-import { t } from "./i18n.js";
+import { t, state } from "./i18n.js";
 import { startIdle } from "./idle.js";
 import { render as renderWelcome } from "./screens/welcome.js";
 import { render as renderLanguage } from "./screens/language.js";
@@ -38,7 +38,26 @@ document.addEventListener("i18n:change", () => {
     const value = t(key);
     if (value && value !== key) el.textContent = value;
   });
+  document.title = state.ui?.title ?? "Serene Spa Wellness";
 });
+
+// Toast helper
+const toastEl = document.getElementById("toast");
+let toastTimer = null;
+export function showToast(message, { duration = 4000 } = {}) {
+  if (!toastEl) return;
+  toastEl.textContent = message;
+  toastEl.hidden = false;
+  // force reflow for transition
+  void toastEl.offsetWidth;
+  toastEl.classList.add("is-visible");
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toastEl.classList.remove("is-visible");
+    setTimeout(() => { toastEl.hidden = true; }, 300);
+  }, duration);
+}
+window.__showToast = showToast;
 
 start();
 startIdle();

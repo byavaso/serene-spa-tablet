@@ -35,7 +35,7 @@ export async function render() {
     <div class="welcome-bg" aria-hidden="true"></div>
     <div class="welcome-overlay" aria-hidden="true"></div>
     <button type="button" class="welcome-tap" aria-label="${texts.en}">
-      <span class="welcome-rotator" data-rotator></span>
+      <span class="welcome-rotator" data-rotator aria-live="off"></span>
       <span class="welcome-hint" aria-hidden="true"></span>
     </button>
   `;

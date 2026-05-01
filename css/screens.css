@@ -15,6 +15,18 @@
   background-size: cover;
   background-position: center;
   background-color: var(--color-surface-alt);
+  animation: ken-burns 50s linear infinite alternate;
+  will-change: transform;
+  transform-origin: center;
+}
+
+@keyframes ken-burns {
+  0%   { transform: scale(1.0) translate3d(0, 0, 0); }
+  100% { transform: scale(1.08) translate3d(-2%, -1%, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-bg { animation: none; transform: none; }
 }
 
 .welcome-overlay {
@@ -105,11 +117,18 @@
 
 @media (max-width: 900px) {
   .language-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .language-grid > li:nth-child(4) { grid-column: 1 / span 2; }
+  .language-grid > li:nth-child(5) { grid-column: 3; }
+}
+
+@media (max-width: 600px) {
+  .language-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .language-grid > li:nth-child(5) {
-    grid-column: span 2;
-  }
+  .language-grid > li:nth-child(4) { grid-column: auto; }
+  .language-grid > li:nth-child(5) { grid-column: span 2; }
 }
 
 .language-card {
@@ -150,7 +169,6 @@
   font-size: var(--fs-xs);
   color: var(--color-text-muted);
   letter-spacing: var(--ls-wide);
-  text-transform: uppercase;
 }
 
 /* ---------- Screen frames ---------- */
@@ -200,7 +218,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-min-category), 1fr));
   gap: var(--space-lg);
 }
 
@@ -284,8 +302,24 @@
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--grid-min-service), 1fr));
   gap: var(--space-lg);
+}
+
+@media (max-width: 1200px) {
+  .service-list {
+    grid-template-columns: repeat(auto-fill, minmax(var(--grid-min-service-tight), 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .svc-card { flex-direction: column; }
+  .svc-card-media {
+    flex: 0 0 auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .svc-card-body { flex: 1 1 auto; }
 }
 
 .svc-card {
@@ -309,6 +343,7 @@
 .svc-card-media {
   flex: 0 0 40%;
   background: var(--color-surface-alt);
+  aspect-ratio: var(--card-media-aspect);
 }
 
 .svc-card-media img {
@@ -415,7 +450,15 @@ html[dir="rtl"] .detail-back-icon {
 
 .detail-hero {
   background: var(--color-surface-alt);
-  min-height: 320px;
+  min-height: var(--detail-hero-min-h);
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .detail-hero {
+    aspect-ratio: var(--detail-hero-aspect);
+    min-height: 0;
+  }
 }
 
 .detail-hero img {
@@ -496,8 +539,8 @@ html[dir="rtl"] .detail-back-icon {
   position: absolute;
   inset-inline-start: 0;
   inset-block-start: 0.7em;
-  width: 6px;
-  height: 6px;
+  width: var(--bullet-size);
+  height: var(--bullet-size);
   border-radius: var(--radius-pill);
   background: var(--color-gold);
 }
@@ -513,12 +556,12 @@ html[dir="rtl"] .detail-back-icon {
 
 #screen.screen-entering > * {
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(var(--transition-offset));
 }
 
 #screen.screen-leaving > * {
   opacity: 0;
-  transform: translateY(-12px);
+  transform: translateY(calc(var(--transition-offset) * -1));
   transition: opacity var(--duration-fast) var(--ease-out),
               transform var(--duration-fast) var(--ease-out);
 }
@@ -531,4 +574,30 @@ html[dir="rtl"] .detail-back-icon {
     transform: none;
     opacity: 1;
   }
+}
+
+/* ---------- Narrow tablet adjustments ---------- */
+
+@media (max-width: 900px) {
+  .welcome-rotator { font-size: var(--fs-2xl); }
+  .screen-title { font-size: var(--fs-xl); }
+  .detail-name { font-size: var(--fs-xl); }
+}
+
+@media (max-width: 768px) {
+  .categories,
+  .services,
+  .detail,
+  .screen-frame {
+    padding-inline: var(--space-md);
+  }
+  .detail-body { padding: var(--space-lg); }
+  .detail-meta { gap: var(--space-lg); }
+}
+
+@media (max-width: 600px) {
+  .welcome-rotator { font-size: var(--fs-xl); }
+  .screen-title { font-size: var(--fs-lg); }
+  .detail-name { font-size: var(--fs-lg); }
+  .language-card-label { font-size: var(--fs-lg); }
 }

@@ -1,0 +1,16 @@
+Self-hosted woff2 fonts — kaynak: Google Fonts (gwfh.mranftl.com).
+
+Cormorant Garamond — Catharsis Fonts — SIL Open Font License 1.1
+  https://fonts.google.com/specimen/Cormorant+Garamond
+  Weights: 300, 400, 500 (latin, latin-ext)
+
+Inter — Rasmus Andersson — SIL Open Font License 1.1
+  https://fonts.google.com/specimen/Inter
+  Weights: 400, 500 (latin, latin-ext, cyrillic)
+
+Noto Naskh Arabic — Google — SIL Open Font License 1.1
+  https://fonts.google.com/noto/specimen/Noto+Naskh+Arabic
+  Weights: 400, 500 (arabic)
+
+OFL özet: ücretsiz embedde, redistribute, modify edilebilir; sadece tek başına satılamaz.
+Tam metin: https://scripts.sil.org/OFL

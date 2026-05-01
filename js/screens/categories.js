@@ -19,9 +19,9 @@ export async function render() {
           .map(
             (cat) => `
           <li>
-            <button type="button" class="cat-card" data-id="${cat.id}">
+            <button type="button" class="cat-card" data-id="${cat.id}" aria-label="${cat.name}">
               <div class="cat-card-media">
-                <img src="${cat.image}" alt="" loading="lazy" decoding="async" onerror="this.style.opacity='0'">
+                <img src="${cat.image}" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
               </div>
               <div class="cat-card-body">
                 <h2 class="cat-card-name">${cat.name}</h2>

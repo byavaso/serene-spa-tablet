@@ -1,7 +1,7 @@
 // Service worker — offline cache + günlük update check.
 // SW_VERSION her deploy'da bump edilir; eski cache activate'de silinir.
 
-const SW_VERSION = "v1.0.1";
+const SW_VERSION = "v1.0.2";
 const CACHE_SHELL = `spa-menu-shell-${SW_VERSION}`;
 const CACHE_DATA = `spa-menu-data-${SW_VERSION}`;
 const CACHE_IMG = `spa-menu-img-${SW_VERSION}`;
@@ -23,6 +23,13 @@ const SHELL_ASSETS = [
   "./js/screens/categories.js",
   "./js/screens/services.js",
   "./js/screens/detail.js",
+  "./fonts/cormorant-garamond-300.woff2",
+  "./fonts/cormorant-garamond-400.woff2",
+  "./fonts/cormorant-garamond-500.woff2",
+  "./fonts/inter-400.woff2",
+  "./fonts/inter-500.woff2",
+  "./fonts/noto-naskh-arabic-400.woff2",
+  "./fonts/noto-naskh-arabic-500.woff2",
 ];
 
 const DATA_ASSETS = [

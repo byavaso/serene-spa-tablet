@@ -23,7 +23,10 @@
     "price": "[DE] Fiyat",
     "benefits": "[DE] Faydalar",
     "categoriesTitle": "[DE] Hizmetlerimiz",
-    "servicesTitle": "[DE] Hizmetler"
+    "servicesTitle": "[DE] Hizmetler",
+    "title": "[DE][TODO] Serene Spa Wellness",
+    "loading": "[DE][TODO] Yükleniyor...",
+    "errorLoad": "[DE][TODO] Menü yüklenemedi. Lütfen tekrar deneyin."
   },
   "categories": [
     {

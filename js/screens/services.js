@@ -28,9 +28,9 @@ export async function render(params) {
           .map(
             (svc) => `
           <li>
-            <button type="button" class="svc-card" data-id="${svc.id}">
+            <button type="button" class="svc-card" data-id="${svc.id}" aria-label="${svc.name}, ${formatDuration(svc.duration)}, ${formatPrice(svc.price)}">
               <div class="svc-card-media">
-                <img src="${svc.image}" alt="" loading="lazy" decoding="async" onerror="this.style.opacity='0'">
+                <img src="${svc.image}" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
               </div>
               <div class="svc-card-body">
                 <h2 class="svc-card-name">${svc.name}</h2>
