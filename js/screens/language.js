@@ -1,7 +1,7 @@
 // Dil seçim ekranı: 5 dil kartı, tap → loadLanguage + categories.
 
 import { navigate } from "../router.js";
-import { loadLanguage } from "../i18n.js";
+import { loadLanguage, state } from "../i18n.js";
 
 // Her dil için native isim (görsel doğrulamalı). Arabic harf sırası: العربية (ع ile başlar).
 const LANGS = [
@@ -35,11 +35,24 @@ export async function render() {
   root.querySelectorAll(".language-card").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const code = btn.dataset.lang;
+      // skeleton inject
+      const screen = document.getElementById("screen");
+      const skeleton = document.createElement("div");
+      skeleton.className = "skeleton-screen";
+      skeleton.innerHTML = `
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton-grid">
+          ${Array.from({ length: 6 }).map(() => `<div class="skeleton skeleton-card"></div>`).join("")}
+        </div>`;
+      screen.appendChild(skeleton);
       try {
         await loadLanguage(code);
         navigate("categories");
       } catch (e) {
         console.error("[language] load failed", e);
+        const msg = state.ui?.errorLoad ?? "Menu load failed. Please try again.";
+        if (window.__showToast) window.__showToast(msg);
+        skeleton.remove();
       }
     });
   });

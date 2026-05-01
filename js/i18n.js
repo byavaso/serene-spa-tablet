@@ -26,6 +26,7 @@ export async function loadLanguage(code) {
     return data;
   } catch (err) {
     console.error(`[i18n] failed to load ${code}.json`, err);
+    document.dispatchEvent(new CustomEvent("i18n:error", { detail: { code, error: String(err) } }));
     if (code !== FALLBACK) return loadLanguage(FALLBACK);
     throw err;
   }

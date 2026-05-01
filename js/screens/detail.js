@@ -25,7 +25,7 @@ export async function render(params) {
       </button>
       <article class="detail-card">
         <div class="detail-hero">
-          <img src="${svc.image}" alt="" loading="lazy" decoding="async" onerror="this.style.opacity='0'">
+          <img src="${svc.image}" alt="${svc.name}" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('missing-image'); this.style.display='none';">
         </div>
         <div class="detail-body">
           <p class="screen-eyebrow">${cat.name}</p>

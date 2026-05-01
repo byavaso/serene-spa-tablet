@@ -2,6 +2,60 @@
    Brand kit gelince sadece bu dosya değişir.
    KURAL: diğer CSS dosyalarında literal renk/font/size yasak, sadece var(--*) referansı. */
 
+/* Self-hosted fonts — OFL. Bkz: fonts/LICENSE.txt */
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/noto-naskh-arabic-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/noto-naskh-arabic-500.woff2") format("woff2");
+}
+
 :root {
   /* Color palette — placeholder (sage / taupe / cream / gold) */
   --color-bg: #f7f4ee;              /* krem zemin */
@@ -79,6 +133,24 @@
   /* Layout */
   --max-content: 1200px;
   --header-height: 88px;
+
+  /* Breakpoints */
+  --bp-sm: 600px;
+  --bp-md: 768px;
+  --bp-lg: 900px;
+  --bp-xl: 1200px;
+
+  /* Grid minimums */
+  --grid-min-category: 260px;
+  --grid-min-service: 360px;
+  --grid-min-service-tight: 280px;
+
+  /* Component sizing */
+  --detail-hero-min-h: 320px;
+  --detail-hero-aspect: 16 / 9;
+  --card-media-aspect: 4 / 3;
+  --bullet-size: 6px;
+  --transition-offset: 12px;
 
   /* Z-index scale */
   --z-base: 1;
