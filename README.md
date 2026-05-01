@@ -116,3 +116,18 @@ spa-menu/
 ```
 
 PRD: `tasks/prd-spa-tablet-menu.md`. Kiosk kurulumu: `docs/kiosk-setup.md`.
+
+---
+
+## Pilot Sonrası İyileştirme Listesi
+
+Pilot başarılıysa bu maddeler sırayla ele alınır. v1 kapsamı dışı, bilinçli ertelendi.
+
+| # | Madde | Aksiyon | Kim |
+|---|-------|---------|-----|
+| 1 | Breakpoint token (sadece 2+ yerde tekrar edenler) | `--bp-md: 900px` gibi 1-2 token, ayrı PR'a değmez | dev |
+| 2 | Hash format kanonikleştir (`#services/<id>`) | Pilot'tan sonra dön, kozmetik | dev |
+| 3 | Kategori/hizmet/welcome görselleri (`images/` altı) | WebP, ~1200x900, <200KB | sahip |
+| 4 | RU/AR/DE gerçek çeviri (placeholder prefix kaldır) | `[RU]/[AR]/[DE]` grep, JSON'da değiştir | profesyonel çevirmen |
+
+> Pilot 2 hafta sonu: hangi diller seçiliyor, misafir nerede takılıyor — verilen rapor + bu liste birlikte değerlendirilir.
